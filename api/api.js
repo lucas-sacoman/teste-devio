@@ -1,0 +1,1 @@
+export const dados = JSON.parse('[{"consumers": [{"name": "João"},{"name": "Maria"},{"name": "José" }]   },{ "products": [{"id": 1,"product": "feijoada" "prize": 100},{"id": 2,"product": "macarronada","prize": 10},{ "id": 3, "product": "sopa", "prize": 100 }]}]')

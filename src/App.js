@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Container, Typography } from '@material-ui/core';
 
-function App() {
+import Order from './components/Orders'
+import { Header } from './components/Header/Header';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>
+        <Typography
+          gutterBottom
+          variant="h1"
+          align="center">
+            dev.Food
+        </Typography>
+      </Header>
+      <Container maxWidth='lg'>
+        <Order />
+      </Container>
+    </>
   );
 }
-
-export default App;
