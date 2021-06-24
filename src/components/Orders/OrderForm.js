@@ -2,6 +2,7 @@ import React from 'react';
 import Form from '../../layouts/Form';
 import Input from '../../controls/Input';
 import TransferList from '../../components/Input/TransferList'
+import Button from '../Input/Button'
 
 import { Grid } from '@material-ui/core';
 
@@ -24,6 +25,7 @@ export default function OrderForm() {
                />
             </Grid>
             <TransferList />
+            <Button />
         </Grid>
      </Form>
    )
