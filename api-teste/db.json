@@ -1,0 +1,34 @@
+{
+   "data": [
+      {
+         "id": 1,
+         "title": "Vegetariana",
+         "price": 39.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Marguerita",
+         "price": 37.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Portuguesa",
+         "price": 40.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Champignon",
+         "price": 35.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Frutos do Mar",
+         "price": 45.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      }
+   ]
+}

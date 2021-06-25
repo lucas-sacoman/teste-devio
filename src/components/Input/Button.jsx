@@ -7,8 +7,9 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     fontFamily: 'Poppins',
-    marginLeft: '39rem',
-    padding: '0.8rem 12.3rem'
+    marginTop: -1,
+    marginLeft: '5rem',
+    padding: '0.9rem 10rem'
   },
 }));
 

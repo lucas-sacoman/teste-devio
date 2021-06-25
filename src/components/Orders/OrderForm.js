@@ -1,10 +1,9 @@
 import React from 'react';
 import Form from '../../layouts/Form';
 import Input from '../../controls/Input';
-import TransferList from '../../components/Input/TransferList'
-import Button from '../Input/Button'
 
-import { Grid } from '@material-ui/core';
+import { Grid, InputAdornment } from '@material-ui/core';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
 // import { Container } from './styles';
 
@@ -16,16 +15,20 @@ export default function OrderForm() {
               <Input 
                   name="clientName" 
                   label="Nome do Cliente"
+                  color="primary"
                />
             </Grid>
             <Grid item xs={6}>
                <Input 
+                  disabled
                   name="total" 
                   label="Total"
+                  InputProps={{
+                     startAdornment: <InputAdornment>
+                        <AttachMoneyIcon color="action" /></InputAdornment>
+                  }}
                />
             </Grid>
-            <TransferList />
-            <Button />
         </Grid>
      </Form>
    )
