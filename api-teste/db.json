@@ -26,8 +26,32 @@
       },
       {
          "id": 1,
-         "title": "Frutos do Mar",
+         "title": "Atum",
          "price": 45.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Calabresa",
+         "price": 33.90,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Frango",
+         "price": 29.99,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Napolitana",
+         "price": 27.80,
+         "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
+      },
+      {
+         "id": 1,
+         "title": "Muçarela",
+         "price": 25.80,
          "imageUrl": "https://as2.ftcdn.net/v2/jpg/03/02/23/31/1000_F_302233181_k4VW79FgVN0DghwLJtQu4xPt3m2I8Kzj.jpg"
       }
    ]

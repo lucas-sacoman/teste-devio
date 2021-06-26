@@ -22,6 +22,7 @@ export default function IconLabelButtons() {
         variant="contained"
         color="primary"
         size="large"
+        type="submit"
         className={classes.button}
         startIcon={<RoomServiceIcon />}
       >

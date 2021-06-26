@@ -6,7 +6,7 @@ export default function Input(props) {
       name, 
       label, 
       value, 
-      variant, 
+      variant,
       onChange, 
       error = null, 
       ...other } = props;

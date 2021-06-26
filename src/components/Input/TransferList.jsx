@@ -21,16 +21,20 @@ const useStyles = makeStyles(theme => ({
   pizzaImg: {
     width: 50,
     height: 50,
-    marginLeft: 50
+    marginLeft: 50,
+    marginRight: 50
   },
 
-  text: {
-    marginRight: 100,
-    marginBottom: 30,
-    marginTop: 30
+  textItem: {
+    fontFamily: 'Poppins',
+    display: 'flex',
+    padding: '0 6rem 0 3rem',
+    alignItems: 'center',
+    margin: '2rem 6rem',
   },
 
   listRoot: {
+    fontFamily: 'Poppins',
     marginTop: theme.spacing(1),
     marginLeft: '5rem',
     width: 460,
@@ -53,7 +57,10 @@ const useStyles = makeStyles(theme => ({
 }
 }))
 
-export default function TransferList() {
+export default function TransferList(props) {
+
+  const { values, setValues } = props;
+  let orderedFoodItems = values.orderDetails;
 
   const classes = useStyles();
 
@@ -73,10 +80,25 @@ export default function TransferList() {
     let x = [...foodList];
     x = x.filter(y => {
         return y.title.toLowerCase().includes(searchKey.toLocaleLowerCase())
-
+            && orderedFoodItems.every(item => item.id !== y.id)
     });
     setSearchList(x);
-}, [searchKey])
+  }, [searchKey, orderedFoodItems])
+
+  const addFoodItem = foodItem => {
+    let x = {
+        orderMasterId: values.orderMasterId,
+        orderDetailId: 0,
+        foodItemId: foodItem.id,
+        quantity: 1,
+        foodItemPrice: foodItem.price,
+        foodItemName: foodItem.title
+    }
+    setValues({
+        ...values,
+        orderDetails: [...values.orderDetails, x]
+    })
+  }
 
   return (
     <>
@@ -92,17 +114,26 @@ export default function TransferList() {
       </Paper>
       <List className={classes.listRoot}>
         {searchList.map((food, index) => (
-          <ListItem key={index}>
+          <ListItem key={index} onClick={e => addFoodItem(food)}>
             <ListItemText>
-              <img className={classes.pizzaImg} src="https://image.flaticon.com/icons/png/512/1369/1369578.png" alt="" />
+              <img className={classes.pizzaImg} src="https://image.flaticon.com/icons/png/512/1369/1369578.png" alt="pizza" />
             </ListItemText>
-            <ListItemText 
-              className={classes.text}          
-              primary={food.title}
-              secondary={'R$ ' + food.price}
-            />
+            <div className={classes.textItem}>
+              <ListItemText 
+                primary={food.title}
+                primaryTypographyProps={{
+                  component: 'h2',
+                  style: {
+                    fontFamily: 'Poppins',
+                    fontWeight: '500',
+                    fontSize: '1.2rem'
+                  }
+                }}
+                secondary={'R$ ' + food.price}          
+              />
+            </div>
             <ListItemSecondaryAction>
-              <IconButton>
+              <IconButton onClick={e => addFoodItem(food)}>
                 <ExposurePlus1Icon />
                 <ArrowForwardIcon />
               </IconButton>
