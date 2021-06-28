@@ -66,7 +66,7 @@ export default function TransferedList(props) {
 
     return (
         <List>
-            {orderedFoodItems.length == 0 ?
+            {orderedFoodItems.length === 0 ?
                 <ListItem>
                     <ListItemText
                         primary="Escolha suas pizzas."

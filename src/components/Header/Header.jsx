@@ -12,7 +12,7 @@ export const Header = styled.header `
    height: 2rem;
    color: #fffefe;
    background: #3f51b5;
-   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.7);
+   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.9);
 
    h1 {
       font-weight: 200;

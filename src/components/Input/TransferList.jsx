@@ -9,6 +9,7 @@ const useStyles = makeStyles(theme => ({
   searchPaper: {
     width: 453,
     marginLeft: '5rem',
+    marginTop: '-3rem',
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center'
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     padding: '0 6rem 0 3rem',
     alignItems: 'center',
-    margin: '2rem 6rem',
+    margin: '1rem 6rem',
   },
 
   listRoot: {
@@ -83,12 +84,11 @@ export default function TransferList(props) {
             && orderedFoodItems.every(item => item.id !== y.id)
     });
     setSearchList(x);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchKey, orderedFoodItems])
 
   const addFoodItem = foodItem => {
     let x = {
-        orderMasterId: values.orderMasterId,
-        orderDetailId: 0,
         foodItemId: foodItem.id,
         quantity: 1,
         foodItemPrice: foodItem.price,
