@@ -9,7 +9,7 @@ Essa aplicação foi construida com:
 * [REACT](https://reactjs.org/) - como biblioteca web.
 * [MATERIAL UI](https://material-ui.com/pt/) - para estilização e construção de componentes.
 * [YARN](https://yarnpkg.com/) - para instalação de extensões, entre outras funcionalidades.
-* [JSON-SERVER] - para a construção de uma API REST, que continha os dados dos produtos.
+* JSON-SERVER - para a construção de uma API REST, que continha os dados dos produtos.
 
 ## ✒️ Autor
 
